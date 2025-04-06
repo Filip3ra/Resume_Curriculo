@@ -1,0 +1,28 @@
+IMPACTO QUANTIFICÁVEL Seniors focam em:
+→ "Implementei microserviços"
+→ "Refatorei o sistema legado"
+
+Staff+ focam em:
+→ "Reduzi latência em 60%, aumentando conversão em 12%"
+→ "Economizei R$430K/ano em infra com nova arquitetura"
+
+2️⃣ INFLUÊNCIA ORGANIZACIONAL
+Seniors influenciam:
+→ Seu time imediato
+→ Decisões técnicas locais
+
+Staff+ influenciam:
+→ Múltiplos times
+→ CTO/CPO
+→ Direção estratégica da empresa
+
+3️⃣ CLAREZA MENTAL EXTREMA
+Seniors:
+→ Tentam lembrar de tudo
+→ Reagem a demandas
+→ Gerenciam múltiplos contextos
+
+Staff+:
+→ Usam sistemas externos confiáveis
+→ Priorizara por impacto estratégico
+→ Protegem blocos de foco profundo

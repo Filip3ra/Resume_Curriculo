@@ -1,0 +1,4 @@
+Experiência com observability vs monitoring;
+Experiência prévia com desenvolvimento de software, de preferência em arquitetura de microservices;
+Vivência com sistemas em produção e cloud platform;
+Cloud computing (GCP, OCI, AWS ou Azure)
