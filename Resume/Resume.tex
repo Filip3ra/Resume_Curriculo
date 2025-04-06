@@ -13,6 +13,8 @@
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
+\usepackage{comment} % Para comentários dentro de um bloco
+
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -153,7 +155,7 @@
 \def \name{Filipi Maciel}
 \def \nameSuffix{ENG}
 \def \subtitleText{Software Developer}
-\def \summaryText{Something about myself (mini cover letter or summary)}
+\def \summaryText{Backend | C\# | .Net Core |}
 
 \def \linkedinLink{https://www.linkedin.com/}
 \def \linkedinText{/filipi-maciel-891300132}
@@ -214,7 +216,7 @@
 %---------- EDUCATION
 %-------------------------------------------------------------------------------------------------
 \section{Education}{\educationIcon}
-\cvEntryNTPL{Federal Institute of Education, Science and Technology of Northern Minas Gerais}{2019 -- 2025}{Bachelor's Degree in Computer Science}{Montes Claros - MG}
+\cvEntryNTPL{Federal Institute of Education, Science and Technology of Northern Minas Gerais - IFNMG}{2019 -- 2025}{Bachelor's Degree in Computer Science}{Montes Claros - Minas Gerais, Brazil}
 %\cvEntryNTPL{School/University Name}{Start -- End}{Program}{Location}
 
 %-------------------------------------------------------------------------------------------------
@@ -222,50 +224,88 @@
 %-------------------------------------------------------------------------------------------------
 \section{Work Experience}{\workIcon}
 \cvEntryNTPLD
-    {Company Name}{Start -- End}
-    {Position}{Location}{
-    \cvItemS{Languages/Skills used}
-    \cvItem{Description of tasks 1}
-    \cvItem{Description of tasks 2}
-    \cvItem{Description of tasks 3}
+    {Sicoob Credinosso}{Nov 2022 – Feb 2024}
+    {Data Analyst – Business Intelligence in the Financial Sector}{Montes Claros, Minas Gerais, Brazil}{
+    \cvItemS{VBA | Software Development | Excel | IBM Cognos Analytics | Power BI }
+    \cvItem{Responsible for optimizing routines and automating reports using VBA (Visual Basic). Data extraction, processing, and management using IBM Cognos Analytics.}
+    \cvItem{Performed maintenance on systems developed in VBA, including file management systems and goal tracking systems. Developed and maintained interactive dashboards in Power BI.}
+    \cvItem{Presentation of results using Microsoft Office tools such as Word and PowerPoint.}
 }
 \cvEntryNTPLD
-    {Company Name}{Start -- End}
-    {Position}{Location}{
-    \cvItemS{Languages/Skills used}
-    \cvItem{Description of tasks 1}
-    \cvItem{Description of tasks 2}
-    \cvItem{Description of tasks 3}
+    {UaiCode (Junior Enterprise)}{Sep 2016 – Jun 2017}
+    {Project Manager – Software Development}{Montes Claros, Minas Gerais, Brazil}{
+    \cvItemS{SCRUM | Trello | Planning | Team Management}
+    \cvItem{Managed the entire software development project lifecycle, from planning to delivery. Acted as a liaison between stakeholders, developers, and QA teams to ensure strategic alignment.}
+    \cvItem{Oversaw timelines, costs, and risk management using Trello. Implemented Agile Scrum methodology and DevOps practices to automate development workflows.}
+    %\cvItem{Description of tasks 3}
 }
-\cvEntryNTPLD
-    {Company Name}{Start -- End}
-    {Position}{Location}{
-    \cvItemS{Languages/Skills used}
-    \cvItem{Description of tasks 1}
-    \cvItem{Description of tasks 2}
-    \cvItem{Description of tasks 3}
+
+%-------------------------------------------------------------------------------------------------
+%---------- PERSONAL PROJECTS
+%-------------------------------------------------------------------------------------------------
+%\newpage %Uncomment if this section is not entirely on this page
+\section{Personal Projects}{\projectsIcon}
+%\cvEntryND{\cvItemND{English, French, Spanish, Portuguese}{}}
+
+\cvEntryNTD{Investment API}{Apr 2025 – Apr 2025}{
+	\cvItemS{ JavaScript | HTML | CSS }
+	\cvItem{"From 0 to 100K" is an API built using JavaScript and HTML that simulates an investment calculator. It estimates how long it would take to reach one hundred thousand reais through monthly and annual investments. This project allowed me to create a simple yet functional application from scratch — covering the initial idea, version control, development, and deployment. It serves as a Proof of Concept (PoC) to evaluate the feasibility of a full-scale investment simulation platform.}
+	\cvItem{\href{https://investimento-api.vercel.app/}{Available here.}}
+	
+	
 }
+
 
 %-------------------------------------------------------------------------------------------------
 %---------- PROJECTS
 %-------------------------------------------------------------------------------------------------
 %\newpage %Uncomment if FIRST ITEM of this section is not entirely on this page
-\section{Projects}{\projectsIcon}
-\cvEntryAcademicalNTD{Name}{Start -- End}{
-    \cvItemS{Languages/Skills used}
-    \cvItem{Description of tasks 1}
-    \cvItem{Description of tasks 2}
+\section{University Projects}{\projectsIcon}
+\cvEntryNTD{My Code: Programming for Children}{Jan 2022 – Dec 2022}{
+    \cvItemS{Programming | Robotics | Teaching | Tutoring }
+    \cvItem{Worked as an instructor teaching programming and robotics to children using a custom robotics kit developed by the project team. The kit included programmable electronic components such as Arduino, sensors, and LEDs. Students programmed the kit through the DB4K platform. Activities and interactive exercises were created to provide a fun and hands-on learning experience.}
+    %\cvItem{}
 }
-\cvEntryPersonalNTD{Name}{Start -- End}{
-    \cvItemS{Languages/Skills used}
-    \cvItem{Description of tasks 1}
-    \cvItem{Description of tasks 2}
+\cvEntryNTD{My Maker: Programming and Robotics}{Jan 2021 – Dec 2022}{
+    \cvItemS{Programming | Robotics | Mathematics |Teaching | Tutoring }
+    \cvItem{Served as an instructor for programming and robotics classes aimed at children and teenagers. Lessons included block-based programming using Code.org, robotics projects using Tinkercad for designing electronic circuits, and unplugged activities to teach basic programming and mathematical concepts.}
+    %\cvItem{Description of tasks 2}
 }
-\cvEntryWorkNTD{Name}{Start -- End}{
-    \cvItemS{Languages/Skills used}
-    \cvItem{Description of tasks 1}
-    \cvItem{Description of tasks 2}
+\cvEntryNTD{Programming and Robotics for Children and Teenagers}{Jul 2020 – Dec 2020}{
+    \cvItemS{Programming | Eletronics | Robotics | Teaching | Tutoring }
+    \cvItem{Worked as an instructor in programming and robotics classes using recycled materials. Created and recorded educational video lessons for children and teenagers to introduce them to programming and robotics in a creative and accessible way.}
+    %\cvItem{Description of tasks 2}
 }
+\newpage
+\cvEntryNTD{Program Children: Programming for Kids}{Jun 2017 – Dec 2017}{
+	\cvItemS{ Programming | Mathematics | Logic }
+	\cvItem{Taught programming classes focused on developing logical and computational thinking skills in children. The goal was to introduce them to computer science concepts, spark interest in technology, and enhance their performance in mathematics.}
+	%\cvItem{Description of tasks 2}
+}
+\cvEntryNTD{Animated LIBRAS Dictionary Applied to Math Teaching: Technology for Inclusion}{May 2016 – Dec 2016}{
+	\cvItemS{ LIBRAS | 3D Modeling | Animation | Mathematics }
+	\cvItem{Worked on 3D modeling and animation in Brazilian Sign Language (LIBRAS) using Blender software. Developed animated content for a dictionary focused on mathematical symbols, promoting accessibility and inclusion in education.}
+	%\cvItem{Description of tasks 2}
+}
+
+\cvEntryNTD{GeoGebra Initiative: Using GeoGebra in Calculus Teaching}{Mar 2015 – Oct 2015}{
+	\cvItemS{ Applets | Geogebra | Calculus | Mathematics }
+	\cvItem{Developed interactive applets using GeoGebra to support the teaching of differential and integral calculus for undergraduate students.}
+	%\cvItem{Description of tasks 2}
+}
+%-------------------------------------------------------------------------------------------------
+%---------- VOLUNTEER
+%-------------------------------------------------------------------------------------------------
+%\newpage %Uncomment if this section is not entirely on this page
+\section{Volunteer Work}{\skillsIcon}
+\cvEntryND{
+	\cvItemND{Project Director}{Enactus IFNMG - I was a member of the Enactus-IFNMG team where I worked on social projects aimed at promoting the teaching of programming to children. I had the opportunity to learn about project management, management tools, interpersonal relationships, the importance of social work and teamwork. May 2016 - Dec 2016}
+	%\cvItemND{Category}{Comma separated list of skills}
+	%\cvItemND{Category}{Comma separated list of skills}
+	%\cvItemND{Category}{Comma separated list of skills}
+}
+
+
 
 %-------------------------------------------------------------------------------------------------
 %---------- COMMUNICATION
@@ -274,24 +314,25 @@
 \section{Communication}{\communicationIcon}
 %\cvEntryND{\cvItemND{English, French, Spanish, Portuguese}{}}
 \cvEntryND{
-    \cvItemL{Language}{Level}{Language}{Level}{Language}{Level}{Language}{Level}
+    \cvItemL{English}{professional}{Portuguese}{Native}{}{}{}{}
 }
 
 
+	
 %-------------------------------------------------------------------------------------------------
 %---------- AWARDS
 %-------------------------------------------------------------------------------------------------
-\newpage %Uncomment if FIRST ITEM of this section is not entirely on this page
-\section{Awards}{\awardsIcon}
-\cvEntryNTD{Name}{Date Received}{
-    \cvItemS{Description of award (if not evident with name)}
-    \cvItem{Description of reason for award}
+%\newpage %Uncomment if FIRST ITEM of this section is not entirely on this page
+\section{Publications}{\awardsIcon}
+\cvEntryNTD{ccessnet: Animated LIBRAS Dictionary}{Jun 26, 2017}{
+    \cvItemS{Intercâmbio Unimontes Magazine}
+    %\cvItem{Description of reason for award}
 }
-\cvEntryNTD{Name}{Date Received}{
-    \cvItemS{Description of award (if not evident with name)}
-    \cvItem{Description of reason for award}
+\cvEntryNTD{Chaotic Cryptography: Transformation of Arnold's Cat Applied to Computer Security}{May 1, 2016}{
+    \cvItemS{SIC - Scientific Initiation Seminars}
+    %\cvItem{Description of reason for award}
 }
-
+\begin{comment}
 %-------------------------------------------------------------------------------------------------
 %---------- SKILLS
 %-------------------------------------------------------------------------------------------------
@@ -315,5 +356,9 @@
     \cvItemND{Category}{Description of what interests you in this category}
     \cvItemND{Category}{Description of what interests you in this category}
 }
+
+
+\end{comment}
+
 
 \end{document}

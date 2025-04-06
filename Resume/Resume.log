@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.6.2)  6 APR 2025 10:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.6.2)  6 APR 2025 17:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -162,6 +162,10 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthR=\skip70
 \@temptokenb=\toks23
 )
+(C:\Users\filip\AppData\Local\Programs\MiKTeX\tex/latex/comment\comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
 (C:\Users\filip\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
 
@@ -307,9 +311,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip71
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+Package hyperref Info: Option `colorlinks' set `true' on input line 22.
 LaTeX Font Info:    Trying to load font information for T1+FiraSans-OsF on inpu
-t line 189.
+t line 191.
 
 (C:\Users\filip\AppData\Local\Programs\MiKTeX\tex/latex/fira\t1firasans-osf.fd
 File: T1FiraSans-OsF.fd 2019/10/10 (autoinst) Font definitions for T1/FiraSans-
@@ -318,9 +322,9 @@ OsF.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/l/n' in size <10> not available
 
 (Font)              Font shape `T1/FiraSans-OsF/light/n' tried instead on input
- line 189.
+ line 191.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/light/n' will be
-(Font)              scaled to size 10.0pt on input line 189.
+(Font)              scaled to size 10.0pt on input line 191.
 
 (C:\Users\filip\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
@@ -330,24 +334,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (Resume.aux)
 \openout1 = `Resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 189.
-LaTeX Font Info:    ... okay on input line 189.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
 \c@mv@tabular=\count281
 \c@mv@boldtabular=\count282
 
@@ -366,23 +370,23 @@ ii
 \makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks25
 )
-Package hyperref Info: Link coloring ON on input line 189.
+Package hyperref Info: Link coloring ON on input line 191.
  (Resume.out) (Resume.out)
-\@outlinefile=\write3
-\openout3 = `Resume.out'.
+\@outlinefile=\write4
+\openout4 = `Resume.out'.
 
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <10> not available
 
 (Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input 
-line 216.
+line 218.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 216.
+(Font)              scaled to size 10.0pt on input line 218.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 216.
+(Font)              <7> on input line 218.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 216.
+(Font)              <5> on input line 218.
 LaTeX Font Info:    Trying to load font information for U+fontawesomeone on inp
-ut line 216.
+ut line 218.
 
 (C:\Users\filip\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesom
 eone.fd
@@ -390,10 +394,10 @@ File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
 )
 
 LaTeX Font Warning: Font shape `U/fontawesomeone/b/n' undefined
-(Font)              using `U/fontawesomeone/m/n' instead on input line 216.
+(Font)              using `U/fontawesomeone/m/n' instead on input line 218.
 
 LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
-ut line 223.
+ut line 225.
 
 (C:\Users\filip\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesom
 etwo.fd
@@ -401,44 +405,40 @@ File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
 
 LaTeX Font Warning: Font shape `U/fontawesometwo/b/n' undefined
-(Font)              using `U/fontawesometwo/m/n' instead on input line 223.
+(Font)              using `U/fontawesometwo/m/n' instead on input line 225.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 231.
+(Font)              <9> on input line 233.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 231.
+(Font)              <6> on input line 233.
 
 LaTeX Font Warning: Font shape `U/fontawesometwo/l/n' undefined
-(Font)              using `U/fontawesometwo/m/n' instead on input line 231.
+(Font)              using `U/fontawesometwo/m/n' instead on input line 233.
 
 
 LaTeX Font Warning: Font shape `U/fontawesomeone/l/n' undefined
-(Font)              using `U/fontawesomeone/m/n' instead on input line 231.
+(Font)              using `U/fontawesomeone/m/n' instead on input line 233.
 
-
-(C:\Users\filip\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesom
-ethree.fd)
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <20.74> not availa
 ble
 (Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input 
-line 284.
+line 279.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 20.74pt on input line 284.
+(Font)              scaled to size 20.74pt on input line 279.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/l/n' in size <12> not available
 
 (Font)              Font shape `T1/FiraSans-OsF/light/n' tried instead on input
- line 284.
+ line 279.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/light/n' will be
-(Font)              scaled to size 12.0pt on input line 284.
+(Font)              scaled to size 12.0pt on input line 279.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/l/it' in size <12> not availabl
 e
 (Font)              Font shape `T1/FiraSans-OsF/light/it' tried instead on inpu
-t line 284.
+t line 279.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/light/it' will be
-(Font)              scaled to size 12.0pt on input line 284.
+(Font)              scaled to size 12.0pt on input line 279.
 
-
-Package hyperref Warning: Suppressing link with empty target on input line 284.
+Package hyperref Warning: Suppressing link with empty target on input line 279.
 
 
 [1{C:/Users/filip/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/fi
@@ -447,13 +447,30 @@ lip/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_iln36p.enc}{C:/Users
 .enc}
 
 {C:/Users/filip/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome/fonta
-wesomeone.enc}{C:/Users/filip/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fon
-tawesome/fontawesomethree.enc}]
+wesomeone.enc}]
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <9> not available
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input 
+line 306.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 9.0pt on input line 306.
+LaTeX Font Info:    Trying to load font information for U+fontawesomethree on i
+nput line 326.
 
-Package hyperref Warning: Suppressing link with empty target on input line 319.
+(C:\Users\filip\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesom
+ethree.fd
+File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
+)
+
+LaTeX Font Warning: Font shape `U/fontawesomethree/b/n' undefined
+(Font)              using `U/fontawesomethree/m/n' instead on input line 326.
+
+Excluding 'comment' comment.
+
+Package hyperref Warning: Suppressing link with empty target on input line 364.
 
 
-[2] (Resume.aux)
+[2{C:/Users/filip/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome/fon
+tawesomethree.enc}] (Resume.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -466,22 +483,22 @@ Package rerunfilecheck Info: File `Resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12009 strings out of 474485
- 191753 string characters out of 5743735
- 1966542 words of memory out of 5000000
- 34147 multiletter control sequences out of 15000+600000
+ 12062 strings out of 474485
+ 192825 string characters out of 5743735
+ 1968542 words of memory out of 5000000
+ 34196 multiletter control sequences out of 15000+600000
  694764 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,25n,79p,250b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,25n,79p,510b,499s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\filip\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
 1000.pk><C:/Users/filip/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/F
 iraSans-Bold.pfb><C:/Users/filip/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/fira/FiraSans-Light.pfb><C:/Users/filip/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/fira/FiraSans-LightItalic.pfb><C:/Users/filip/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on Resume.pdf (2 pages, 154869 bytes).
+Output written on Resume.pdf (2 pages, 176369 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
