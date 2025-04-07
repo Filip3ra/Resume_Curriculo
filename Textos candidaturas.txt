@@ -1,0 +1,28 @@
+
+
+netvagas experiencia:
+Analista de Dados na Sicoob, dando manutenção e desenvolvendo sistemas em VBA. 
+Gerente de Projetos na UaiCode empresa júnior. 
+Desenvolvo projetos pessoais em C# e .NET para ampliar meus 
+conhecimentos nessas tecnologias.
+
+Sou desenvolvedor de software com experiência em C#, .NET e analise dados, 
+focado em criar soluções eficientes e bem estruturadas. Tenho experiência no 
+setor financeiro, quando trabalhei como Analista de Dados na Sicoob Credinosso. 
+Tenho trabalhado recentemente com projetos pessoais para automatizar alguns 
+processos na empresa da minha mãe, voltada para gestão de eventos, que me 
+permitiu solidificar meus conhecimentos em linguagens orientadas a objetos e 
+otimização de consulta em banco de dados. Minha jornada como desenvolvedor 
+começou logo na graduação, onde tive a oportunidade de participar de diversos 
+projetos que envolvem ensino de programação para crianças em escolas públicas, 
+e até hoje continuo buscando enfrentar desafios que exigem lógica e otimização. 
+
+
+
+algo importante que aprendi na graduação:
+Aprendi que o diferencial da minha área (Ciência da Computação) está na otimização. 
+Otimizar um algoritmo ou um consulta em um BD é crucial para o desenvolvimento de qualquer sistema. 
+Otimizar ajuda reduzir custos de infraestrutura e aumentar lucro com soluções 
+eficientes. Saber identificar a complexidade de um algoritmo e a classificação 
+de complexidade de um problema é fator chave para garantir que um sistema funcione 
+de forma adequada. 

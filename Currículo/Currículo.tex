@@ -1,0 +1,356 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault,light]{FiraSans}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{calc}
+
+\usepackage[cm,headings]{fullpage}
+
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage{comment} % Para comentários dentro de um bloco
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=primary,
+}
+%-------------------------------------------------------------------------------------------------
+%---------- CUSTOM COMMANDS
+%-------------------------------------------------------------------------------------------------
+
+%---------- Icons
+\newcommand{\icon}[1]{\begin{tabular}{p{\iconWidth}}{#1}\end{tabular}}
+\renewcommand{\section}[2]{\vspace{0.5em}\color{primary}\textbf{{#2}{#1}}\hrule\color{black}}
+
+%---------- Head
+\renewcommand{\headrulewidth}{0pt}
+\newcommand{\cvText}[1]{#1\vspace{0.75em}}
+
+%---------- Entries
+% Entry with Name, Time, Position, Location and Details
+\newcommand{\cvEntryNTPLD}[5]{
+    \begin{itemize}[leftmargin=\entryMargin]
+        \item[]
+            \begin{tabularx}{\textwidth-\entryMargin}{Xr}
+                \textbf{\color{black}#1} & {\color{secondary}\small#2} \\
+                \textit{\color{secondary}\small#3} & \textit{\color{secondary}\small#4} \\
+            \end{tabularx}\vspace{-0.75em}
+        \begin{itemize}[labelsep=\entryMargin-1.5em,leftmargin=\entryMargin]
+            \small#5
+        \end{itemize}
+    \end{itemize}
+}
+% Entry with Name, Time, Position and Location
+\newcommand{\cvEntryNTPL}[4]{
+    \begin{itemize}[leftmargin=\entryMargin]
+        \item[]
+            \begin{tabularx}{\textwidth-\entryMargin}{Xr}
+                \textbf{\color{black}#1} & {\color{secondary}\small#2} \\
+                \textit{\color{secondary}\small#3} & \textit{\color{secondary}\small#4} \\
+            \end{tabularx}\vspace{-0.75em}
+    \end{itemize}
+}
+% Entry with Name, Time and Details
+\newcommand{\cvEntryNTD}[3]{
+    \begin{itemize}[leftmargin=\entryMargin]
+        \item[]
+            \begin{tabularx}{\textwidth-\entryMargin}{Xr}
+                \textbf{\color{black}#1} & {\color{secondary}\small#2} \\
+            \end{tabularx}\vspace{-0.75em}
+        \begin{itemize}[labelsep=\entryMargin-1.5em,leftmargin=\entryMargin]
+            \small#3
+        \end{itemize}
+    \end{itemize}
+}
+% Entry with Name and Details
+\newcommand{\cvEntryND}[1]{
+    \small
+    \begin{itemize}[leftmargin=\entryMargin]
+        #1
+    \end{itemize}
+    \normalsize
+}
+% Entry for Languages (up to 4)
+\newcommand{\cvItemL}[8]{
+    \item[]
+        \begin{tabularx}{\textwidth-\entryMargin}{XXXX}
+            {\textbf{#1} \textit{#2}}&{\textbf{#3} \textit{#4}}&{\textbf{#5} \textit{#6}}&{\textbf{#7} \textit{#8}}
+        \end{tabularx}\vspace{-0.25em}
+}
+% Entry for Academical Projects
+\newcommand{\cvEntryAcademicalNTD}[3]{\cvEntryNTD{\educationIcon{Academical: }#1}{#2}{#3}}
+% Entry for Personal Projects
+\newcommand{\cvEntryPersonalNTD}[3]{\cvEntryNTD{\personalIcon{Personal: }#1}{#2}{#3}}
+% Entry for Work Projects
+\newcommand{\cvEntryWorkNTD}[3]{\cvEntryNTD{\workIcon{Work: }#1}{#2}{#3}}
+
+% Bullet point under an entry's details list
+\newcommand{\cvItem}[1]{\item[\bulletIcon]{#1\vspace{-0.25em}}}
+% Special bullet point under an entry's details list
+\newcommand{\cvItemS}[1]{\item[\accentIcon]{#1\vspace{-0.25em}}}
+% Bulletless point under an entry's details list, with Name and Description 
+\newcommand{\cvItemND}[2]{\item[]{\textbf{#1}\hspace{1em}#2}\vspace{-0.25em}}
+
+%-------------------------------------------------------------------------------------------------
+%---------- SETTINGS HERE
+%-------------------------------------------------------------------------------------------------
+%---------- Colours
+\definecolor{primary}{HTML}{007BFF}
+\definecolor{secondary}{HTML}{3C454D}
+\definecolor{info}{HTML}{17A2B8}
+
+%---------- Margins
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\voffset}{-0.5cm}
+\setlength{\headheight}{3.5em}
+\addtolength{\headsep}{-2em}
+\addtolength{\oddsidemargin}{-0.25cm}
+\addtolength{\evensidemargin}{-0.25cm}
+\addtolength{\headwidth}{0.5cm}
+\addtolength{\textwidth}{0.5cm}
+
+%---------- Entries
+\def \entryMargin{1em}
+
+%---------- Icons
+\def \iconWidth{1.5em}
+% Predefined icons, based on FontAwesome.
+% see https://ctan.mirror.rafal.ca/fonts/fontawesome/doc/fontawesome.pdf for more options.
+\def \linkedinIcon{\icon{\faLinkedin}}
+\def \phoneIcon{\icon{\faPhone}}
+\def \homeIcon{\icon{\faHome}}
+\def \emailIcon{\icon{\faEnvelope}}
+\def \githubIcon{\icon{\faGithub}}
+\def \websiteIcon{\icon{\faGlobe}}
+
+\def \educationIcon{\icon{\faGraduationCap}}
+\def \workIcon{\icon{\faBriefcase}}
+\def \projectsIcon{\icon{\faFlask}}
+\def \communicationIcon{\icon{\faComments}}
+\def \awardsIcon{\icon{\faTrophy}}
+\def \skillsIcon{\icon{\faGears}}
+\def \interestsIcon{\icon{\faGamepad}}
+
+\def \expertIcon{\icon{\faStar}}
+\def \proficientIcon{\icon{\faStarHalfFull}}
+\def \noviceIcon{\icon{\faStarO}}
+\def \personalIcon{\icon{\faUser}}
+
+\def \bulletIcon{\icon{\faAngleRight}}
+\def \accentIcon{\icon{\faAngleDoubleRight}} % \faCaretRight \faAngleDoubleRight \faCode
+
+
+%-------------------------------------------------------------------------------------------------
+%---------- DATA HERE
+%-------------------------------------------------------------------------------------------------
+%---------- Header data
+\def \name{Filipi Maciel}
+\def \nameSuffix{ENG}
+\def \subtitleText{Software Developer}
+\def \summaryText{Backend | C\# | .Net Core |}
+
+\def \linkedinLink{https://www.linkedin.com/}
+\def \linkedinText{/filipi-maciel-891300132}
+
+\def \phoneText{55+ 38 99216-0517}
+
+\def \homeText{Montes Claros - MG}
+
+\def \emailLink{mailto:filipijardimrm@gmail.com}
+\def \emailText{filipijardimrm@gmail.com}
+
+\def \githubLink{https://github.com/Filip3ra}
+\def \githubText{/Filip3ra}
+
+\def \websiteLink{}
+\def \websiteText{}
+
+%---------- Header format
+\def \fullName{\textbf{\huge\name}\large\hspace{0.3em}\textit{\nameSuffix}}
+\def \subtitle{\textit{\small\cvText{\subtitleText}}}
+\def \summary{\cvText{\summaryText}}
+\def \linkedin{\small\linkedinIcon\href{\linkedinLink}{\linkedinText}}
+\def \phone{\small\phoneIcon{\phoneText}}
+\def \home{\small\homeIcon{\homeText}}
+\def \email{\small\emailIcon\href{\emailLink}{\emailText}}
+\def \github{\small\githubIcon\href{\githubLink}{\githubText}}
+\def \website{\small\websiteIcon\href{\websiteLink}{\websiteText}}
+
+
+%-------------------------------------------------------------------------------------------------
+%---------- START
+%-------------------------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------------------------
+%---------- HEADER
+%-------------------------------------------------------------------------------------------------
+\fancyhead[L]{
+    \begin{tabular}[c]{l}
+        {\fullName}\\
+        {\subtitle}
+    \end{tabular}
+    \vspace{-0.75em}
+}
+\fancyhead[R]{
+    \begin{tabular}[c]{l@{\hspace{1em}}l@{\hspace{1em}}l}
+        % Configure the order in which the header data appears. Must be in 3 colums.
+        {\phone} & {\github} & {\email} \\
+        {\home} & {\website} & {\linkedin}\\
+        \vspace{0.5em}
+    \end{tabular}
+    \vspace{-0.75em}
+}
+%-------------------------------------------------------------------------------------------------
+%---------- INTRODUCTION
+%-------------------------------------------------------------------------------------------------
+\summary\\ % Comment out if not using
+%-------------------------------------------------------------------------------------------------
+%---------- FORMAÇÃO ACADÊMICA
+%-------------------------------------------------------------------------------------------------
+\section{Formação Acadêmica}{\educationIcon}
+\cvEntryNTPL{Instituto Federal de Educação, Ciência e Tecnologia do Norte de Minas Gerais - IFNMG}{2019 -- 2025}{Bacharelado em Ciência da Computação}{Montes Claros - Minas Gerais, Brasil}
+%\cvEntryNTPL{Nome da Escola/Universidade}{Início -- Fim}{Curso}{Localização}
+
+%-------------------------------------------------------------------------------------------------
+%---------- EXPERIÊNCIA PROFISSIONAL
+%-------------------------------------------------------------------------------------------------
+\section{Experiência Profissional}{\workIcon}
+\cvEntryNTPLD
+    {Sicoob Credinosso}{Nov 2022 – Fev 2024}
+    {Analista de Dados – Inteligência de Negócios no Setor Financeiro}{Montes Claros, Minas Gerais, Brasil}{
+    \cvItemS{VBA | Desenvolvimento de Software | Excel | IBM Cognos Analytics | Power BI }
+    \cvItem{Responsável por otimizar rotinas e automatizar relatórios utilizando VBA (Visual Basic). Extração, processamento e gerenciamento de dados com IBM Cognos Analytics.}
+    \cvItem{Realizei manutenção em sistemas desenvolvidos em VBA, incluindo sistemas de gestão de arquivos e acompanhamento de metas. Desenvolvi e mantive dashboards interativos no Power BI.}
+    \cvItem{Apresentação de resultados utilizando ferramentas do Microsoft Office, como Word e PowerPoint.}
+}
+\cvEntryNTPLD
+    {UaiCode (Empresa Júnior)}{Set 2016 – Jun 2017}
+    {Gerente de Projetos – Desenvolvimento de Software}{Montes Claros, Minas Gerais, Brasil}{
+    \cvItemS{SCRUM | Trello | Planejamento | Gestão de Equipes}
+    \cvItem{Gerenciei todo o ciclo de vida de projetos de desenvolvimento de software, do planejamento à entrega. Atuou como elo entre stakeholders, desenvolvedores e equipes de QA para garantir o alinhamento estratégico.}
+    \cvItem{Supervisionei cronogramas, custos e gerenciamento de riscos utilizando Trello. Implementou a metodologia ágil Scrum e práticas de DevOps para automatizar fluxos de trabalho de desenvolvimento.}
+    %\cvItem{Descrição de tarefas 3}
+}
+\cvEntryNTPLD
+{CEAD - Centro de Educação a Distância}{Nov 2016 – Jun 2019}
+{Editor e Produtor de Vídeo}{Montes Claros, Minas Gerais, Brasil}{
+	\cvItemS{After Effects | Photoshop | Maya | Adobe Premiere Pro CC}
+	\cvItem{Como editor, utilizei software Premiere Pro CC para edição de aulas de ensino a distância, realizando correções de áudio, tratamento de imagem. Explorei recursos e funcionalidades do software Adobe After Effects, Maya e Blender, realizando modelagens 3D para vídeos e propagandas institucionais do IFNMG.}
+	\cvItem{Como produtor, capacitei professores para as gravações e operei equipamentos de filmagem como câmeras, microfones lapelas, iluminação, lousa interativa, teleprompter, mesa de som, T2 iddr playout.}
+	%\cvItem{Descrição de tarefas 3}
+}
+%-------------------------------------------------------------------------------------------------
+%---------- PROJETOS PESSOAIS
+%-------------------------------------------------------------------------------------------------
+%\newpage %Descomente se esta seção não estiver inteiramente nesta página
+\section{Projetos Pessoais}{\projectsIcon}
+%\cvEntryND{\cvItemND{Inglês, Francês, Espanhol, Português}{}}
+
+\cvEntryNTD{API de Investimento}{Abr 2025 – Abr 2025}{
+	\cvItemS{ JavaScript | HTML | CSS }
+	\cvItem{"De 0 aos 100K" é uma API construída com JavaScript e HTML que simula uma calculadora de investimentos. Ela estima quanto tempo levaria para atingir cem mil reais por meio de investimentos mensais e anuais. Este projeto permitiu criar uma aplicação simples, porém funcional, do zero — abrangendo a ideia inicial, controle de versão, desenvolvimento e implantação. Serve como Prova de Conceito (PoC) para avaliar a viabilidade de uma plataforma de simulação de investimentos em larga escala.}
+	\cvItem{\href{https://investimento-api.vercel.app/}{Disponível aqui.}}	
+}
+
+%-------------------------------------------------------------------------------------------------
+%---------- PROJETOS UNIVERSITÁRIOS
+%-------------------------------------------------------------------------------------------------
+%\newpage %Descomente se o PRIMEIRO ITEM desta seção não estiver inteiramente nesta página
+\section{Projetos Universitários}{\projectsIcon}
+\cvEntryNTD{Meu Código: Programação para Crianças}{Jan 2022 – Dez 2022}{
+	\cvItemS{Programação | Robótica | Ensino | Monitoria }
+	\cvItem{Atuei como instrutor ensinando programação e robótica para crianças utilizando um kit de robótica personalizado desenvolvido pela equipe do projeto. O kit incluía componentes eletrônicos programáveis, como Arduino, sensores e LEDs. Os alunos programavam o kit por meio da plataforma DB4K. Foram criadas atividades e exercícios interativos para proporcionar uma experiência de aprendizado divertida e prática.}
+}
+\cvEntryNTD{Meu Maker: Programação e Robótica}{Jan 2021 – Dez 2022}{
+	\cvItemS{Programação | Robótica | Matemática | Ensino | Monitoria }
+	\cvItem{Atuei como instrutor em aulas de programação e robótica voltadas para crianças e adolescentes. As aulas incluíram programação em blocos utilizando o Code.org, projetos de robótica com uso do Tinkercad para design de circuitos eletrônicos, além de atividades "desplugadas" para ensinar conceitos básicos de programação e matemática.}
+}
+\cvEntryNTD{Programação e Robótica para Crianças e Adolescentes}{Jul 2020 – Dez 2020}{
+	\cvItemS{Programação | Eletrônica | Robótica | Ensino | Monitoria }
+	\cvItem{Atuei como instrutor em aulas de programação e robótica utilizando materiais recicláveis. Criei e gravei videoaulas educativas para crianças e adolescentes com o objetivo de introduzi-los à programação e à robótica de forma criativa e acessível.}
+}
+%\newpage
+\cvEntryNTD{Programar Crianças: Programação para Crianças}{Jun 2017 – Dez 2017}{
+	\cvItemS{ Programação | Matemática | Lógica }
+	\cvItem{Ministrei aulas de programação com foco no desenvolvimento do pensamento lógico e computacional em crianças. O objetivo era introduzir conceitos da ciência da computação, despertar o interesse pela tecnologia e melhorar o desempenho em matemática.}
+}
+
+\cvEntryNTD{Dicionário Animado de LIBRAS Aplicado ao Ensino de Matemática: Tecnologia para Inclusão}{Mai 2016 – Dez 2016}{
+	\cvItemS{ LIBRAS | Modelagem 3D | Animação | Matemática }
+	\cvItem{Atuei com modelagem e animação 3D em Língua Brasileira de Sinais (LIBRAS) utilizando o software Blender. Desenvolvi conteúdos animados para um dicionário focado em símbolos matemáticos, promovendo acessibilidade e inclusão na educação.}
+}
+
+\cvEntryNTD{Iniciativa GeoGebra: Uso do GeoGebra no Ensino de Cálculo}{Mar 2015 – Out 2015}{
+	\cvItemS{ Applets | GeoGebra | Cálculo | Matemática }
+	\cvItem{Desenvolvi applets interativos utilizando o GeoGebra para apoiar o ensino de cálculo diferencial e integral para alunos de graduação.}
+}
+
+%-------------------------------------------------------------------------------------------------
+%---------- VOLUNTARIADO
+%-------------------------------------------------------------------------------------------------
+%\newpage %Descomente se esta seção não estiver inteiramente nesta página
+\section{Trabalho Voluntário}{\skillsIcon}
+\cvEntryND{
+	\cvItemND{Diretor de Projetos}{Enactus IFNMG – Fui membro da equipe Enactus-IFNMG, onde atuei em projetos sociais voltados para o ensino de programação para crianças. Tive a oportunidade de aprender sobre gestão de projetos, ferramentas de gerenciamento, relações interpessoais, importância do trabalho social e do trabalho em equipe. Mai 2016 – Dez 2016}
+}
+
+%-------------------------------------------------------------------------------------------------
+%---------- COMUNICAÇÃO
+%-------------------------------------------------------------------------------------------------
+%\newpage %Descomente se esta seção não estiver inteiramente nesta página
+\section{Comunicação}{\communicationIcon}
+%\cvEntryND{\cvItemND{Inglês, Francês, Espanhol, Português}{}}
+\cvEntryND{
+	\cvItemL{Inglês}{Profissional}{Português}{Nativo}{}{}{}{}
+}
+
+%-------------------------------------------------------------------------------------------------
+%---------- PUBLICAÇÕES
+%-------------------------------------------------------------------------------------------------
+%\newpage %Descomente se o PRIMEIRO ITEM desta seção não estiver inteiramente nesta página
+\section{Publicações}{\awardsIcon}
+\cvEntryNTD{ccessnet: Dicionário Animado em LIBRAS}{26 Jun, 2017}{
+	\cvItemS{Revista Intercâmbio Unimontes}
+}
+\cvEntryNTD{Criptografia Caótica: Transformação do Gato de Arnold Aplicada à Segurança da Informação}{1 Mai, 2016}{
+	\cvItemS{SIC - Seminários de Iniciação Científica}
+}
+
+\begin{comment}
+%-------------------------------------------------------------------------------------------------
+%---------- SKILLS
+%-------------------------------------------------------------------------------------------------
+%\newpage %Uncomment if this section is not entirely on this page
+\section{Skills}{\skillsIcon}
+\cvEntryND{
+    \cvItemND{Category}{Comma separated list of skills}
+    \cvItemND{Category}{Comma separated list of skills}
+    \cvItemND{Category}{Comma separated list of skills}
+    \cvItemND{Category}{Comma separated list of skills}
+}
+
+%-------------------------------------------------------------------------------------------------
+%---------- INTERESTS
+%-------------------------------------------------------------------------------------------------
+%\newpage %Uncomment if this section is not entirely on this page
+\section{Interests}{\interestsIcon}
+\cvEntryND{
+    \cvItemND{Category}{Description of what interests you in this category}
+    \cvItemND{Category}{Description of what interests you in this category}
+    \cvItemND{Category}{Description of what interests you in this category}
+    \cvItemND{Category}{Description of what interests you in this category}
+}
+
+
+\end{comment}
+
+
+\end{document}
