@@ -1,0 +1,17 @@
+
+Monte uma adaptação para a vaga que você foi selecionado. 
+Faça um cronometração para fechar o assunto em torno de 1 min.
+
+- Fale sobre você.
+	> De onde eu vim?
+	> O que já fiz até aqui? atividades, aprendizado
+	> O que busco agora? 
+
+- Seu maior desafio, projeto desafiador.
+	> Manutenção no sistema de gerenciamento de arquivos.
+	> Desenvolviemnto de um sistema completo em C# para empresa da minha mãe.
+
+- Seus pontos fortes e fracos. 
+
+
+- Por que devemos te contratar?

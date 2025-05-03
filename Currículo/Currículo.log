@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.6.2)  7 APR 2025 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.6.2)  3 MAY 2025 10:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -422,23 +422,23 @@ LaTeX Font Warning: Font shape `U/fontawesomeone/l/n' undefined
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <20.74> not availa
 ble
 (Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input 
-line 279.
+line 287.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 20.74pt on input line 279.
+(Font)              scaled to size 20.74pt on input line 287.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/l/n' in size <12> not available
 
 (Font)              Font shape `T1/FiraSans-OsF/light/n' tried instead on input
- line 279.
+ line 287.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/light/n' will be
-(Font)              scaled to size 12.0pt on input line 279.
+(Font)              scaled to size 12.0pt on input line 287.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/l/it' in size <12> not availabl
 e
 (Font)              Font shape `T1/FiraSans-OsF/light/it' tried instead on inpu
-t line 279.
+t line 287.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/light/it' will be
-(Font)              scaled to size 12.0pt on input line 279.
+(Font)              scaled to size 12.0pt on input line 287.
 
-Package hyperref Warning: Suppressing link with empty target on input line 279.
+Package hyperref Warning: Suppressing link with empty target on input line 287.
 
 
 [1{C:/Users/filip/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/fi
@@ -450,11 +450,11 @@ lip/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_iln36p.enc}{C:/Users
 wesomeone.enc}]
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <9> not available
 (Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input 
-line 303.
+line 319.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 9.0pt on input line 303.
+(Font)              scaled to size 9.0pt on input line 319.
 LaTeX Font Info:    Trying to load font information for U+fontawesomethree on i
-nput line 319.
+nput line 335.
 
 (C:\Users\filip\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesom
 ethree.fd
@@ -462,11 +462,11 @@ File: ufontawesomethree.fd 2016/05/22 Font definitions for U/fontawesomethree.
 )
 
 LaTeX Font Warning: Font shape `U/fontawesomethree/b/n' undefined
-(Font)              using `U/fontawesomethree/m/n' instead on input line 319.
+(Font)              using `U/fontawesomethree/m/n' instead on input line 335.
 
 Excluding 'comment' comment.
 
-Package hyperref Warning: Suppressing link with empty target on input line 356.
+Package hyperref Warning: Suppressing link with empty target on input line 372.
 
 
 [2{C:/Users/filip/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome/fon
@@ -483,11 +483,11 @@ Package rerunfilecheck Info: File `Currículo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12062 strings out of 474485
- 192929 string characters out of 5743735
- 1971542 words of memory out of 5000000
+ 12061 strings out of 474485
+ 192896 string characters out of 5743735
+ 1973542 words of memory out of 5000000
  34196 multiletter control sequences out of 15000+600000
- 694764 words of font info for 64 fonts, out of 8000000 for 9000
+ 694311 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,25n,79p,531b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\filip\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
@@ -496,7 +496,7 @@ iraSans-Bold.pfb><C:/Users/filip/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/fira/FiraSans-Light.pfb><C:/Users/filip/AppData/Local/Programs/MiKTeX/fonts/
 type1/public/fira/FiraSans-LightItalic.pfb><C:/Users/filip/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb>
-Output written on Currículo.pdf (2 pages, 182789 bytes).
+Output written on Currículo.pdf (2 pages, 183326 bytes).
 PDF statistics:
  58 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)

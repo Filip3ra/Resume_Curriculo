@@ -1,0 +1,15 @@
+Hi, thank you for the opportunity to introduce myself.
+
+While I haven’t worked directly with Vue.js or NestJS in production projects yet, 
+I do have experience with related technologies that I believe would make the learning curve smooth.
+
+For example, I worked on a project similar to a POC using JavaScript and HTML, 
+i beleived these concepts that are also central to NestJS development.
+
+In another project, I helped develop an event management system using C# with .NET on the backend and Angular 
+on the frontend. This experience gave me strong familiarity with component-based architecture, 
+dependency injection, services, and working with TypeScript — all of which are also core parts 
+of both NestJS and Vue.js.
+
+Since Vue.js shares some similarities with Angular, especially in terms of component structure and reactivity, 
+I believe I can adapt quickly to using it in real-world applications.

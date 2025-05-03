@@ -1,0 +1,9 @@
+✅ EC2 – Instâncias virtuais.
+✅ ECS (com Fargate) – Para rodar containers sem precisar gerenciar servidores.
+✅ S3 – Armazenamento de arquivos. Provavelmente o melhor e mais conhecido/usado serviço da AWS.
+✅ RDS/DynamoDB – Banco de dados relacional ou NoSQL.
+✅ Lambda – Pra rodar código sem se preocupar com servidor.
+✅ API Gateway – Pra expor APIs sem dor de cabeça.
+✅ CloudWatch – Logs e monitoramento (seus debugs agradecem).
+✅ IAM – Controle de permissões. Esse tem importância subestimada. Mas se errar aqui...
+✅ SNS/SQS – Filas e mensagens assíncronas.

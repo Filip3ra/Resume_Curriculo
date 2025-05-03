@@ -1,0 +1,32 @@
+Hi, my name is Filipi Maciel, and I’m a software developer from Brazil.
+
+Before i can acctualy start,
+
+I hold a bachelor’s degree in Computer Science from the Federal Institute, where I’ve been involved in several projects related to programming.
+
+Over the past few years, I’ve had the opportunity to build a solid foundation in software development through both professional experience and 
+personal projects. Most recently, I worked at Sicoob, a major credit cooperative, similar to a bank, here in brazil, as a Data Analyst. 
+There, I automated business reports using VBA, handled data with IBM Cognos Analytics, and created interactive dashboards using 
+Power BI. This experience helped me develop strong analytical thinking and problem-solving skills, especially when it comes to transforming 
+data into clear and actionable insights.
+
+Earlier in my journey, I also worked as a Project Manager at UaiCode, a junior enterprise focused on software development. 
+In this role, I managed full project lifecycles, from planning to delivery, coordinating tasks between developers, stakeholders, and QA teams. 
+I applied Agile Scrum methodology, managed deadlines and risks, and ensured the team stayed aligned with the client’s goals. 
+This experience strengthened my leadership, communication, and organizational skills — qualities that continue to support my growth as a 
+developer today.
+
+In terms of technical projects, I developed an Event Management System using C#, .NET, and Minimal API. 
+This application includes login authentication and CRUD operations for managing events and staff. It was designed to 
+streamline the organization of small to medium-sized events. I also created an Investment API using JavaScript and HTML, 
+which simulates how long it would take to reach a financial goal based on monthly and annual investments.
+
+Outside of development, I’ve also been actively involved in educational initiatives where I taught programming and robotics to 
+children and teenagers.       These experiences not only deepened my technical knowledge, but also sharpened my communication and mentoring skills.
+
+Right now, my professional focus is on backend development using C# and .NET. 
+
+I’m passionate about building robust, 
+efficient systems, and I’m constantly looking to improve my skills and contribute to meaningful projects. 
+
+Thank you for watching, and I look forward to the chance to be part of your team.
